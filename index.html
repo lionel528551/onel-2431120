@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - Tableau</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Tableau JS API -->
+  <script src="https://public.tableau.com/javascripts/api/viz_v1.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Lionel's Tableau</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle" href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li>
+      
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header"><h6>Name: Lionel Messi Y.P</h6></li>
+            <li class="dropdown-header"><span>NPM: 2431120</span></li>
+            <li class="dropdown-header"><span>Class: 2SIMA</span></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-heading">Tugas</li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart1.html"><span>Map Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart2.html"><span>Bar Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart3.html"><span>Bubble Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart4.html"><span>Gantt Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart5.html"><span>Line Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart6.html"><span>Pie Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart7.html"><span>Horizontal Bar Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart8.html"><span>Tree Maps</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart9.html"><span>Lollypop Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart10.html"><span>Word Cloud</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart11.html"><span>Histogram Chart</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart12.html"><span>Scatter plot</span></a></li>
+      <li class="nav-item"><a class="nav-link collapsed" href="chart13.html"><span>Box Plot</span></a></li>
+    </ul>
+  </aside>
+
+  <!-- ======= Main ======= -->
+  <main id="main" class="main">
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Page</a></li>
+          <li class="breadcrumb-item active">Assignment</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Tableau Embed -->
+    <div class="tableauPlaceholder" style="width: 100%; height: 525px;">
+      <iframe 
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Data Visualization"
+        allowtransparency="true"
+        allowfullscreen="true"
+        style="width: 100%; height: 525px; border: none;"
+        src="https://public.tableau.com/views/VincentTableauCode/Dashboard1?:embed=y&:showVizHome=no&:tabs=no&:toolbar=yes">
+      </iframe>
+    </div>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+/
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
